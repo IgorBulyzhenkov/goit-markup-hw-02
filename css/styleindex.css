@@ -6,6 +6,8 @@
     --button-bg-color: #F5F4FA;
     --white-text-color: #FFFFFF;
     --futter-bg-color: #2F303A;
+    --primary-logo-color: #000000;
+    --primary-address-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -31,7 +33,7 @@ body {
 }
 
 .logo-span {
-    color: #000000;
+    color: var(--primary-logo-color);
 }
 
 
@@ -44,6 +46,10 @@ body {
 
 .header-link:hover,
 :focus {
+    color: var(--accent-color);
+}
+
+.header-link.current {
     color: var(--accent-color);
 }
 
@@ -92,7 +98,7 @@ body {
 
 /* comand */
 
-.section-command {
+.section.command {
     background-color: var(--button-bg-color);
 }
 
@@ -118,6 +124,6 @@ body {
 
 .mail,
 .tel {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--primary-address-color);
     text-decoration: none;
 }
