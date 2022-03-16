@@ -54,7 +54,7 @@ body {
     color: var(--accent-color);
 }
 
-.header-link.current {
+.current {
     color: var(--accent-color);
 }
 
@@ -71,13 +71,11 @@ body {
     letter-spacing: 0.02em;
 }
 
-.header-tel:hover,
-:focus {
+.header-tel .header-mail:hover {
     color: var(--accent-color);
 }
 
-.header-mail:hover,
-:focus {
+.header-mail .header-tel:focus {
     color: var(--accent-color);
 }
 
@@ -203,10 +201,6 @@ body {
     background-color: var(--futter-bg-color);
 }
 
-.footer>.logo {
-    color: var(--accent-color)
-}
-
 .footer .logo-span {
     color: var(--white-text-color);
 }
@@ -230,12 +224,10 @@ body {
     line-height: 1.7;
 }
 
-.mail:hover,
-:focus {
+.tel .mail:hover {
     color: var(--accent-color);
 }
 
-.tel:hover,
-:focus {
+.tel .mail:focus {
     color: var(--accent-color);
 }
